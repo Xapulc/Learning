@@ -32,6 +32,7 @@ int main(void) {
 
      if (mergeSort(simpleCompare, array, 0, total, &res)) {
          printf("You have problems with memory\n");
+         free(array);
          return -1;
      }
 
